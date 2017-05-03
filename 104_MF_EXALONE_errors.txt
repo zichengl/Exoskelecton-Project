@@ -1,0 +1,11 @@
+Missing Input :Invalid column #RContact, cell #53, Missing Behavior
+Spelling Error: Invalid column #RContact, cell #33, Behavior:2
+Spelling Error: Invalid column #RContact, cell #73, Behavior:sdsad
+Wrong Duration Error:Invalid column #RContact, cell #33, onset 683088, offset 203145
+Wrong Duration Error:Invalid column #RContact, cell #34, onset 1225684, offset 207382
+Wrong Duration Error:Invalid column #RContact, cell #53, onset 1320000, offset 0
+Wrong Duration Error:Invalid column #RContact, cell #73, onset 4983122, offset 4920220
+Non-continuous Duration Error: Invalid column #RHorMv, cell #46, Onset 1295817, Previous offset 1295731
+Non-continuous Duration Error: Invalid column #RHorMv, cell #55, Onset 1369615, Previous offset 1369706
+Non-continuous Duration Error: Invalid column #RVertMv, cell #3, Onset 215344, Previous offset 215325
+Non-continuous Duration Error: Invalid column #RVertMv, cell #46, Onset 1426785, Previous offset 1426817

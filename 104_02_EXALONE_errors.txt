@@ -1,0 +1,25 @@
+Missing Input :Invalid column #LToyInt, cell #1, Onset 0, Missing Behavior
+Missing Input :Invalid column #MouthReach, cell #1, Onset 0, Missing Behavior
+Missing Input :Invalid column #RArm, cell #1, Onset 0, Missing Behavior
+Missing Input :Invalid column #LArm, cell #1, Onset 0, Missing Behavior
+Missing Input :Invalid column #Trunk, cell #1, Onset 0, Missing Behavior
+Spelling Error: Invalid column #LContact, cell #1, Onset 0, Behavior:ssfasgg
+Spelling Error: Invalid column #LContact, cell #2, Onset 0, Behavior:asdf
+Wrong Duration Error:Invalid column #Period, cell #1, onset 200, offset 100
+Wrong Duration Error:Invalid column #LContact, cell #1, onset 0, offset 0
+Wrong Duration Error:Invalid column #LContact, cell #2, onset 0, offset 0
+Wrong Duration Error:Invalid column #LToyInt, cell #1, onset 0, offset 0
+Wrong Duration Error:Invalid column #MouthReach, cell #1, onset 0, offset 0
+Wrong Duration Error:Invalid column #RArm, cell #1, onset 0, offset 0
+Wrong Duration Error:Invalid column #LArm, cell #1, onset 0, offset 0
+Wrong Duration Error:Invalid column #Trunk, cell #1, onset 0, offset 0
+Wrong Duration Error:Invalid column #LContact, cell #1, onset 0, offset 0 does not belong to any period cell
+Wrong Duration Error:Invalid column #LContact, cell #2, onset 0, offset 0 does not belong to any period cell
+Wrong Duration Error:Invalid column #LToyInt, cell #1, onset 0, offset 0 does not belong to any period cell
+Wrong Duration Error:Invalid column #MouthReach, cell #1, onset 0, offset 0 does not belong to any period cell
+Wrong Duration Error:Invalid column #RArm, cell #1, onset 0, offset 0 does not belong to any period cell
+Wrong Duration Error:Invalid column #LArm, cell #1, onset 0, offset 0 does not belong to any period cell
+Wrong Duration Error:Invalid column #Trunk, cell #1, onset 0, offset 0 does not belong to any period cell
+Non-continuous Duration Error: Invalid column #RHorMv, cell #46, Onset 1295817, Previous offset 1295731
+Non-continuous Duration Error: Invalid column #RHorMv, cell #55, Onset 1369615, Previous offset 1369706
+Non-continuous Duration Error: Invalid column #RVertMv, cell #46, Onset 1426785, Previous offset 1426817

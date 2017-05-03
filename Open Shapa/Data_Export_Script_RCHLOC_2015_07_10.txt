@@ -1,0 +1,158 @@
+# all files must be saved with .rb ending to be used by OpenSHAPA
+
+# must begin every script with this line
+require 'OpenSHAPA_API.rb'
+
+# tells computer to start program
+begin
+
+# assign Ruby Variables to OpenSHAPA variables
+
+id = getVariable("ID")
+assessment = getVariable("Assessment")
+period = getVariable("Period")
+righthand = getVariable("RightHand")
+lefthand = getVariable("LeftHand")
+visattn = getVariable("VisAttn")
+mouthreach = getVariable("MouthReach")
+
+# assign location of output file.  This file will save with specified name on Desktop.
+
+dir = File.expand_path("~/Desktop") 
+
+out_file = File.new(dir + "/Data_Output_RCHLOC.txt", "a")
+
+# printing nested cells
+
+# prints all info in id cell
+# tells computer which columns to look at & makes sure the coded data fell within the ID, assessment, and period data periods
+
+# Data output for 1st variable column righthand
+
+for idcell in id.cells
+   for assessmentcell in assessment.cells
+         for periodcell in period.cells
+               for righthandcell in righthand.cells
+                       if righthandcell.onset >= periodcell.onset and righthandcell.offset <= periodcell.offset
+                             if periodcell.onset >= assessmentcell.onset and periodcell.offset <= assessmentcell.offset
+                                    if assessmentcell.onset >= idcell.onset and assessmentcell.offset <= idcell.offset
+
+# writes data in output file
+
+                                         out_file.syswrite (idcell.id + "\t" + idcell.initials + "\t" + idcell.studyphase + "\t" + idcell.visitnumber + "\t" + assessmentcell.assessmentname + "\t" + periodcell.periodname + "\s" + periodcell.hand + "\t" + assessmentcell.deviceonoff + "\t" + righthandcell.righthand + "\t" + righthandcell.onset.to_s + "\t" + righthandcell.offset.to_s + "\t" + righthandcell.ventraldorsal + "\t" + righthandcell.openat + "\t" + righthandcell.openever + "\n")
+
+                                     end
+                              end
+                         end
+                 end
+          end
+     end
+end
+
+# Data output for 2nd variable column lefthand
+
+for idcell in id.cells
+   for assessmentcell in assessment.cells
+         for periodcell in period.cells
+               for lefthandcell in lefthand.cells
+                       if lefthandcell.onset >= periodcell.onset and lefthandcell.offset <= periodcell.offset
+                             if periodcell.onset >= assessmentcell.onset and periodcell.offset <= assessmentcell.offset
+                                    if assessmentcell.onset >= idcell.onset and assessmentcell.offset <= idcell.offset
+
+# writes data in output file
+
+                                         out_file.syswrite (idcell.id + "\t" + idcell.initials + "\t" + idcell.studyphase + "\t" + idcell.visitnumber + "\t" + assessmentcell.assessmentname + "\t" + periodcell.periodname + "\s" + periodcell.hand + "\t" + assessmentcell.deviceonoff + "\t" + lefthandcell.lefthand + "\t" + lefthandcell.onset.to_s + "\t" + lefthandcell.offset.to_s + "\t" + lefthandcell.ventraldorsal + "\t" + lefthandcell.openat + "\t" + lefthandcell.openever + "\n")
+
+                                     end
+                              end
+                         end
+                 end
+          end
+     end
+end
+
+
+# Data output for 3rd variable column visattn
+
+for idcell in id.cells
+   for assessmentcell in assessment.cells
+         for periodcell in period.cells
+               for visattncell in visattn.cells
+                       if visattncell.onset >= periodcell.onset and visattncell.offset <= periodcell.offset
+                             if periodcell.onset >= assessmentcell.onset and periodcell.offset <= assessmentcell.offset
+                                    if assessmentcell.onset >= idcell.onset and assessmentcell.offset <= idcell.offset
+
+# writes data in output file
+
+                                         out_file.syswrite (idcell.id + "\t" + idcell.initials + "\t" + idcell.studyphase + "\t" + idcell.visitnumber + "\t" + assessmentcell.assessmentname + "\t" + periodcell.periodname + "\s" + periodcell.hand + "\t" + assessmentcell.deviceonoff + "\t" + visattncell.visattn + "\t" + visattncell.onset.to_s + "\t" + visattncell.offset.to_s + "\n")
+
+                                     end
+                              end
+                         end
+                 end
+          end
+     end
+end
+
+
+# Data output for 4th variable column mouthreach 
+
+for idcell in id.cells
+   for assessmentcell in assessment.cells
+         for periodcell in period.cells
+               for mouthreachcell in mouthreach.cells
+                       if mouthreachcell.onset >= periodcell.onset and mouthreachcell.offset <= periodcell.offset
+                             if periodcell.onset >= assessmentcell.onset and periodcell.offset <= assessmentcell.offset
+                                    if assessmentcell.onset >= idcell.onset and assessmentcell.offset <= idcell.offset
+
+# writes data in output file
+
+                                         out_file.syswrite (idcell.id + "\t" + idcell.initials + "\t" + idcell.studyphase + "\t" + idcell.visitnumber + "\t" + assessmentcell.assessmentname + "\t" + periodcell.periodname + "\s" + periodcell.hand + "\t" + assessmentcell.deviceonoff + "\t" + mouthreachcell.mouthreach + "\t" + mouthreachcell.onset.to_s + "\t" + mouthreachcell.offset.to_s + "\n")
+
+                                     end
+                              end
+                         end
+                 end
+          end
+     end
+end
+
+
+
+
+#                       ************************************************
+
+# Copy and paste to add variables as needed to export all of the variables' data with one script
+
+#                       ************************************************
+
+
+
+
+
+
+# Must also export the period duration information as records
+
+for idcell in id.cells
+   for assessmentcell in assessment.cells
+         if assessmentcell.assessmentname == "RCHLOC"
+             for periodcell in period.cells
+                  if periodcell.onset >= assessmentcell.onset and periodcell.offset <= assessmentcell.offset
+                      if assessmentcell.onset >= idcell.onset and assessmentcell.offset <= idcell.offset
+
+                  
+                      out_file.syswrite (idcell.id + "\t" + idcell.initials + "\t" + idcell.studyphase + "\t" + idcell.visitnumber + "\t" + assessmentcell.assessmentname + "\t" + periodcell.periodname + "\s" + periodcell.hand + "\t" + assessmentcell.deviceonoff + "\t" + assessmentcell.assessmentname + "\t" + periodcell.onset.to_s + "\t" + periodcell.offset.to_s + "\n")
+
+
+                    end                   
+                  end 
+             end     
+         end 
+    end
+end
+
+
+# Final end command follows
+
+end
+

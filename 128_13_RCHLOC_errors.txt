@@ -1,0 +1,6 @@
+Spelling Error: Invalid column #MouthReach, cell #1, Onset 0, Behavior:q
+Wrong Duration Error: Invalid column #Period, cell #1, onset 10, offset 3
+Wrong Duration Error: Invalid column #MouthReach, cell #1, onset 0, offset 0
+Wrong Duration Error:Invalid column #RightHand, cell #1, onset 213807, offset 215806 does not belong to any period cell
+Wrong Duration Error:Invalid column #RightHand, cell #2, onset 445952, offset 1122891 does not belong to any period cell
+Wrong Duration Error:Invalid column #MouthReach, cell #1, onset 0, offset 0 does not belong to any period cell

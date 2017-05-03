@@ -1,0 +1,3 @@
+_fk_participant_id	Initials	study_phase	_fk_visit	Assessment	Period	Device_On_Off	Behavior	Total_Frequency	Normalized_Frequency	Total_Duration	Normalized_Duration	
+127	OF	INTERVENTION	09	EXALONE	EXALONE	OFF	EXALONE	1	0.3333	180000	100.0000	
+127	OF	INTERVENTION	09	EXALONE	EXALONE	ON	EXALONE	1	0.3333	180000	100.0000	

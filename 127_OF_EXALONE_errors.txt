@@ -1,0 +1,4 @@
+Spelling Error: Invalid column #RHorMv, cell #1, Onset 0, Behavior:rihgt hand move middle
+Missing Input :Invalid column #LHorMv, cell #1, Onset 0, Missing Behavior
+Wrong Duration Error:Invalid column #LHorMv, cell #1, onset 0, offset 0
+Non-continuous Duration Error: Invalid column #LHorMv, cell #23, Onset 418350, Previous offset 418356
